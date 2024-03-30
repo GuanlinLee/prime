@@ -1,0 +1,18 @@
+# general
+seed: 1
+device: 'cuda'
+
+# data
+raw_path: 'VIOLENT/Joe Biden/clip_1.mp4'
+save_dir: 'VIOLENT/Joe Biden' # where to save the latents
+
+n_frames: 40
+H: 384
+W: 672
+
+# diffusion
+sd_version: '1.5'
+
+# attack
+step: 100
+diffusion_steps: 2
