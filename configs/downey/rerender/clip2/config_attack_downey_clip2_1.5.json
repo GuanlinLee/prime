@@ -1,0 +1,32 @@
+{
+    "seed": 1,
+    "input": "VIOLENT/Robert Downey Jr/clip_2.mp4",
+    "output": "rerender-results_compel_swap/downey/sd1.5/clip_2/",
+    "work_dir": "work_dir_swap/Robert Downey Jr/sd1.5/clip_2",
+    "key_subdir": "key_swaps/Robert Downey Jr/sd1.5/clip_2",
+    "sd_model": "models/sd.safetensors",
+    "frame_count": 40,
+    "interval": 1,
+    "image_resolution": [
+        704,
+        384
+    ],
+    "inversion_prompt": "Robert Downey Jr is talking in a white room",
+    "prompt": "(Ryan Gosling:1.2) is talking in a white room",
+    "a_prompt": "RAW photo, subject, (high detailed skin:1.2), 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3",
+    "n_prompt": "(deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, mutated hands and fingers:1.4), (deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, disconnected limbs, mutation, mutated, ugly, disgusting, amputation",
+    "x0_strength": 0.8,
+    "control_type": "canny",
+    "canny_low": 50,
+    "canny_high": 100,
+    "control_strength": 0.7,
+    "warp_period": [
+        0,
+        0.1
+    ],
+    "ada_period": [
+        0.8,
+        1
+    ],
+    "loose_cfattn": true
+}
