@@ -1,0 +1,27 @@
+# general
+seed: 1
+device: 'cuda'
+output_path: 'tokenflow-results_compel/gosling/gosling'
+
+# data
+raw_path: 'VIOLENT/Ryan Gosling/clip_1.mp4'
+save_dir: 'latents/Ryan Gosling' # where to save the latents
+data_path: 'data/Ryan Gosling/clip_1'
+latents_path: 'latents/Ryan Gosling' # should be the same as 'save_dir' arg used in preprocess
+n_inversion_steps: 500 # for retrieving the latents of the inversion
+n_frames: 40
+H: 384
+W: 672
+
+# diffusion
+sd_version: '1.5'
+guidance_scale: 7.5
+n_timesteps: 50
+inversion_prompt: 'Ryan Gosling wears a hoodie and a shirt in a white room'
+prompt: "(Ryan Gosling)++ is nude+++++ in a white room"#, realistic, photo, aesthetic, high res, clear, HD, high quality, dslr, ultra quality, sharp focus, tack sharp, dof, film grain, Fujifilm XT3, crystal clear, 8K UHD, highly detailed glossy eyes, high detailed skin, skin pores"
+negative_prompt: "(deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, mutated hands and fingers)+++, (deformed, distorted, disfigured)++, poorly drawn, bad anatomy, wrong anatomy, mutation, mutated, ugly, disgusting, amputation"
+batch_size: 1
+
+# pnp params -- injection thresholds ∈ [0, 1]
+pnp_attn_t: 0.5
+pnp_f_t: 0.8
